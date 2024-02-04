@@ -223,7 +223,6 @@ screen=desktop-article
     var APP_VENDOR = 'tmz';
     var APP_VERSION = '3.15.0';
     var CLIENT_PRELOADED_STATE = { flags: { "_schema": "pbj:tmz:sys:node:flagset:1-0-0", "_id": "prod-web", "status": "published", "etag": "904223c94d159d94db22200b0a9ea065", "created_at": "1554940265816825", "updated_at": "1706906832790961", "title": "prod-web", "booleans": { "districtmDMX_enabled": false, "sfmc_disabled": false, "hotjar_enabled": false, "jwplayer_player_disabled": false, "vwo_enabled": false, "fpc_edge_writer_disabled": false, "secondary_android_app_universal_links_enabled": true, "disqus_enabled": false, "turbolinks_enabled": false, "omit_video_xid_ad_parameter": true }, "ints": { "experiment_outbrain_smartfeed_percentage_tablet": 100, "experiment_outbrain_smartfeed_percentage_desktop": 100, "experiment_outbrain_smartfeed_percentage_smartphone": 100, "fpc_edge_writer_percent": 2 }, "strings": { "fcm_sender_id": "672506631666", "terms_of_use_link_text_es": "T\u00e9rminos de Uso (Nuevo)", "experiment_outbrain_smartfeed_enabled_at_smartphone": "now", "kaltura_uiconf_id": "44197982", "jwplayer_smartphone_player_id": "ItptsEqO", "experiment_outbrain_smartfeed_enabled_at_desktop": "now", "gtm_container_id": "GTM-KTN543J", "jwplayer_variant_player_id": "3K1jI4lK", "ga4_measurement_id": "G-NCN9V8PMQF", "privacy_policy_link_text": "Privacy Policy (New)", "facebook_app_version": "v17.0", "comscore_js_url": "https:\/\/sb.scorecardresearch.com\/plugins\/streaming-jwplayer\/v1\/current.js", "video_cmsid": "2593975", "jwplayer_recommendations_playlist_id": "QMALoHTp", "vwo_account_id": "298107", "kaltura_partner_id": "591531", "terms_of_use_link_text": "Terms of Use (New)", "jwplayer_tablet_player_id": "OiV7EPCq", "privacy_policy_link_text_es": "Pol\u00edtica de Privacidad (Nuevo)", "fcm_web_api_key": "AIzaSyAcs5PrK3p2gzA4_L04XlwBsfBHpUqg5r4", "do_not_sell_link_text_es": "Sus Opciones de Privacidad", "fcm_app_id": "1:672506631666:web:78989ecf095b90bbaec76b", "careers_link_href": "https:\/\/www.linkedin.com\/company\/tmz\/", "comscore_publisher_id": "9013181", "experiment_outbrain_smartfeed_enabled_at_tablet": "now", "ketch_boot_script": "https:\/\/global.ketchcdn.com\/web\/v2\/config\/tmz\/tmz_web\/boot.js", "jwplayer_sponsored_videos_playlist_id": "KNy1n2XX", "jwplayer_desktop_player_id": "lybAYvM6", "fcm_project_id": "tmz-prod", "do_not_sell_link_href_es": "https:\/\/privacy.tmz.com\/main\/web\/main?ketch_lang=es-419", "google_maps_api_key": "AIzaSyCrqsN_gbzYePypkrK5xGMeJp4ZFaoCd7c", "gumgum_id": "ae071174", "status": "online" } } };
-    var CLIENT_PUBLIC_PATH = 'https://static.tmz.com/tmz-web/client/v3.15/main.desktop.143f39282e5b7631c8b1.js'.split('main.desktop')[0];
     var CLOUD_PROVIDER = 'aws';
     var CLOUD_REGION = 'us-east-1';
     var CLOUD_ZONE = 'us-east-1c';
@@ -248,8 +247,7 @@ screen=desktop-article
     foxstrike.cmd = foxstrike.cmd || [];
   </script>
 
-  <script id="main-desktop-js" src="https://static.tmz.com/tmz-web/client/v3.15/main.desktop.143f39282e5b7631c8b1.js"
-    defer></script>
+
   <script id="gpt-js" src="https://www.googletagservices.com/tag/js/gpt.js" defer></script>
 
   <script id="profile-sdk" src="https://foxkit.fox.com/sdk/profile/v2.10.0/profile.js" defer
@@ -1496,11 +1494,13 @@ screen=desktop-article
                 data-context="{&quot;section&quot;:&quot;permalink&quot;,&quot;name&quot;:&quot;image&quot;}">
                 <div class="img-wrapper">
                   <div class="magnify-icon icon icon-lg">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                       <defs />
                       <path
                         d="M10.5 0a9.5 9.5 0 016.91 16.02L23 21.76a1 1 0 11-1.44 1.4l-5.66-5.84A9.5 9.5 0 1110.5 0zm0 2a7.5 7.5 0 100 15 7.5 7.5 0 000-15zm0 3a1 1 0 011 1v2.5H14a1 1 0 010 2h-2.5V13a1 1 0 01-2 0v-2.5H7a1 1 0 010-2h2.5V6a1 1 0 011-1z" />
-                    </svg>
+                    </svg> -->
+
+                    <button id="wannabe">WannaBe</button>
                   </div>
                   <img width="728" height="546" class="img-fluid image-block__img-fluid img-aspect-auto"
                     src="https://imagez.tmz.com/image/b0/4by3/2024/01/30/b0102ac7b7de4287bab2993864d5c70c_md.jpg"
@@ -1511,9 +1511,38 @@ screen=desktop-article
                 </div>
               </a>
             </div>
+
+            <dialog>
+              <button autofocus>Close</button>
+              <div class="grid-container">
+                <div class="column">
+                  <div class="item">Shirt Row 1</div>
+                  <div class="item">Pants Row 1</div>
+                  <div class="item">Shoes Row 1</div>
+                </div>
+                <div class="column">
+                  <div class="item">Shirt Row 2</div>
+                  <div class="item">Pants Row 2</div>
+                  <div class="item">Shoes Row 2</div>
+                </div>
+              </div>
+            </dialog>
             <script>
               wbq.push(function preloadImage() {
                 window.TMZ.dispatch(window.TMZ.actions.loadNode({ "_schema": "pbj:tmz:dam:node:image-asset:1-0-0", "_id": "image_jpg_20240130_b0102ac7b7de4287bab2993864d5c70c", "status": "published", "etag": "21de3d924e01e92c8224ce0a7fc28c44", "created_at": "1706622172348211", "updated_at": "1706622183559841", "title": "lindsay lohan and husband and his mom take stroll with baby in georgia bg 1.jpg", "mime_type": "image\/jpeg", "file_size": "617042", "file_etag": "a98c151a7a18dac27cf38b1336ed52ac", "credit": "Backgrid", "gallery_seq": 0, "alt_text": "lindsay lohan and husband and his mom take stroll with baby in georgia", "width": 1200, "height": 900 }));
+              });
+              const dialog = document.querySelector("dialog");
+              const showButton = document.querySelector("#wannabe");
+              const closeButton = document.querySelector("dialog button");
+
+              // "Show the dialog" button opens the dialog modally
+              showButton.addEventListener("click", () => {
+                dialog.showModal();
+              });
+
+              // "Close" button closes the dialog
+              closeButton.addEventListener("click", () => {
+                dialog.close();
               });
             </script>
           </section><!--/#cb-29184ed3309fc7a7fd4609ff1841e546-->
@@ -1532,7 +1561,8 @@ screen=desktop-article
             <p>The actress popped up in Alpharetta, GA Monday -- about 40 minutes outside of Atlanta -- where she and
               her husband, <strong>Bader Shammas</strong>, were on a nice little walk with their baby boy,
               <strong>Luai</strong>, who was chillin' in his stroller ... with dad taking care of push duties, as LiLo
-              snacked.</p>
+              snacked.
+            </p>
           </section><!--/#cb-e4e3ee3d4c9fd9a71e3ed9d97c61ce0a-->
 
           <section id="cb-e21fec4e8362e56aeac1dcb2d9d22c8d"

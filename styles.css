@@ -30567,3 +30567,48 @@ input[type=radio]:checked+.poll-block__input-icon+.poll-block__input-label {
     padding: 0;
     margin: 0 auto
 }
+
+button#wannabe {
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    text-align: center;
+    border: 1px outset blue;
+    background-color: lightBlue;
+    height:75px;
+    width:75px;
+    cursor:pointer;
+    font-size: 15px;
+}
+
+button#wannabe:hover {
+    background-color: blue;
+     color:white;
+ }
+
+ ::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px; /* Adjust the gap between columns */
+  }
+  
+  .column {
+    border: 1px solid #000; /* Optional: Border for column */
+    padding: 10px; /* Optional: Padding for column */
+  }
+  
+  .item {
+    border: 1px solid #ddd; /* Optional: Border for each item */
+    padding: 10px; /* Optional: Padding for each item */
+  }
