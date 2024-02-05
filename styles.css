@@ -29053,12 +29053,13 @@ iframe[scrolling=no] {
 }
 
 .img-wrapper {
-    position: relative
+    position: relative;
+    background-color: black;
 }
 
 .image-block {
     position: relative;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .image-block__media-footer {
@@ -30611,4 +30612,11 @@ button#wannabe:hover {
   .item {
     border: 1px solid #ddd; /* Optional: Border for each item */
     padding: 10px; /* Optional: Padding for each item */
+  }
+
+  img.main {
+    object-fit: contain;
+    margin: auto;
+    display: block;
+    padding: 0px;
   }
