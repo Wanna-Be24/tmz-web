@@ -30604,6 +30604,7 @@ dialog {
     gap: 0px;
     /* Adjust the gap between columns */
     height: fit-content;
+    width: 942px;
 }
 
 .column {
@@ -30668,4 +30669,8 @@ img.main {
     margin: auto;
     display: block;
     padding: 0px;
+}
+
+.column img:hover {
+    opacity: .9;
 }
