@@ -30596,6 +30596,7 @@ button#wannabe:hover {
 dialog {
     border-radius: 25px;
     border: none !important;
+    padding: 0px;
 }
 .grid-container {
     display: grid;
@@ -30616,10 +30617,17 @@ dialog {
     /* Optional: Border for each item */
     /* padding: 10px; */
     /* Optional: Padding for each item */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 115px;
+    height: 105px;
+    text-align: center;
+}
+
+.item.accessory {
+    height: 45px;
+}
+
+.item.text {
+    font-size: smaller;
+    height: 40px;
 }
 
 
@@ -30634,7 +30642,7 @@ dialog {
 .right-column {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    width: 300px;
 }
 
 .left-column img,
