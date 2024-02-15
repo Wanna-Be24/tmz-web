@@ -3,7 +3,12 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
+    background-color: #3498db; /* Fallback color */
+    background-image: radial-gradient(#8e44ad 5%, transparent 5%),
+                      radial-gradient(#8e44ad 5%, transparent 5%); /* Purple circles */
+    background-size: 200px 200px; /* Increased size for bigger circles */
+    background-position: 0 0, 100px 100px; /* Adjusted position for denser circles */
 }
 
 .grid-container {
