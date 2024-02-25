@@ -30611,6 +30611,7 @@ dialog {
     /* border: 1px solid #000; */
     /* Optional: Border for column */
     min-width: 200px;
+    height: 512px;
 }
 
 .item {
@@ -30623,12 +30624,12 @@ dialog {
 }
 
 .item.accessory {
-    height: 45px;
+    height: 8.79%;
 }
 
 .item.text {
     font-size: smaller;
-    height: 40px;
+    height: 7.81%;
 }
 
 
@@ -30636,7 +30637,7 @@ dialog {
     text-align: center;
     font-weight: 600;
     font-size: xx-large;
-    height: 50px
+    height: 9.76%;
 }
 
 .left-column,
@@ -30644,6 +30645,10 @@ dialog {
     display: flex;
     flex-direction: column;
     width: 300px;
+}
+
+.item.flexible {
+    flex-grow: 1;
 }
 
 .left-column img,
