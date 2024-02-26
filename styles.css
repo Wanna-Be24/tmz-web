@@ -30648,7 +30648,8 @@ dialog {
 }
 
 .item.flexible {
-    flex-grow: 1;
+    min-height: 25px;
+    flex: 1;
 }
 
 .left-column img,
