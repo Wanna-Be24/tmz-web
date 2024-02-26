@@ -30680,3 +30680,12 @@ img.main {
 .column img:hover {
     opacity: .8;
 }
+
+#shop-banner {
+    max-width: 200px;
+    padding-bottom: 25px;
+}
+
+#shop-banner:hover {
+    filter: brightness(50%) sepia(100) saturate(100) hue-rotate(37deg);
+}
