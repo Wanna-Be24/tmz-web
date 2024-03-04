@@ -30571,20 +30571,22 @@ input[type=radio]:checked+.poll-block__input-icon+.poll-block__input-label {
 
 button#wannabe {
     position: absolute;
-    right: .5rem;
+    right: 8.5rem;
     bottom: .5rem;
     text-align: center;
-    border: 1px outset blue;
-    background-color: lightBlue;
+    /* border: 1px outset blue;
+    background-color: lightBlue; */
     height: 75px;
     width: 75px;
     cursor: pointer;
     font-size: 15px;
+    background-color: transparent;
+    border: transparent;
 }
 
 button#wannabe:hover {
-    background-color: blue;
-    color: white;
+    /* background-color: blue;
+    color: white; */
 }
 
 ::backdrop {
