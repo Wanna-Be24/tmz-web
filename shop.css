@@ -1,0 +1,70 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('./wannabe-back.png');
+}
+
+.grid-container {
+    background-color: white;
+    border-radius: 25px;
+    margin: 25px;
+
+    grid-template-columns: repeat(3, 1fr); /* for header */
+}
+
+h1 {
+    color: red;
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.card-header1 {
+    grid-column: 1 / -1; /* Span across all columns */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ccc; /* Add a thin border */
+    padding: 20px;
+    min-height: auto;
+    background-color: white;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+}
+
+.celebrity-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the photo round */
+    margin-right: 10px;
+}
+
+.celebrity-info {
+    font-size: 18px;
+}
+
+.celebrity-name {
+    font-weight: bold;
+}
+
+.date {
+    color: #888;
+}
+
+.item .wannabe-cart-right {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    margin-right: 18%;
+}
+
+.item .wannabe-cart-left {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    margin-left: 18%;
+}
