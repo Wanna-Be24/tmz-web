@@ -54,7 +54,7 @@ h1 {
 }
 
 .item .wannabe-cart-right {
-    width: 50px;
+    width: 30px;
     height: auto;
     position: absolute;
     right: 0;
@@ -62,9 +62,17 @@ h1 {
 }
 
 .item .wannabe-cart-left {
-    width: 50px;
+    width: 30px;
     height: auto;
     position: absolute;
     left: 0;
     margin-left: 18%;
+}
+
+.item.flexible .wannabe-cart-left, .item.flexible .wannabe-cart-right{
+    transform: translateY(50%);
+}
+
+.price {
+    font-size: medium;
 }

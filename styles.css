@@ -30629,11 +30629,15 @@ dialog {
     height: 8.79%;
 }
 
+.item.bottom{
+    height: 7.81%;
+    font-size: medium;
+}
+
 .item.text {
     font-size: smaller;
     height: 7.81%;
 }
-
 
 .column .title {
     text-align: center;
@@ -30661,6 +30665,7 @@ dialog {
     width: auto;
     /* Maintain aspect ratio */
     align-self: center;
+    padding-bottom: 10px;
 }
 
 .center-column img {
