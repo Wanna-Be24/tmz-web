@@ -30623,15 +30623,33 @@ dialog {
     /* Optional: Padding for each item */
     height: 105px;
     text-align: center;
+    font-family: ProximaNovaExCn_Black, Impact, "Roboto Condensed", "Arial Narrow", sans-serif;
 }
 
 .item.accessory {
     height: 8.79%;
+    position: relative;
 }
 
 .item.bottom{
     height: 7.81%;
     font-size: medium;
+    position: relative;
+}
+
+.bottom-container-right{
+    position: absolute;
+    right: 0;
+    padding: 2px;
+    border: 3px solid #888;
+}
+
+.bottom-container-left{
+    position: absolute;
+    left: 0;
+    padding: 2px;
+    border: 3px solid #888;
+    margin-left: 13px;
 }
 
 .item.text {
@@ -30656,6 +30674,7 @@ dialog {
 .item.flexible {
     min-height: 25px;
     flex: 1;
+    position: relative;
 }
 
 .left-column img,
