@@ -30637,19 +30637,28 @@ dialog {
     position: relative;
 }
 
-.bottom-container-right{
+.bottom-container-right, .bottom-container-left{
     position: absolute;
-    right: 0;
     padding: 2px;
-    border: 3px solid #888;
+    border: 1px solid #f45252;
+    border-radius: 5%;
+    color: #f45252;
+}
+
+.bottom-container-right{
+    right: 0;
 }
 
 .bottom-container-left{
-    position: absolute;
     left: 0;
-    padding: 2px;
-    border: 3px solid #888;
     margin-left: 13px;
+}
+
+.wannabe-total {
+    display: inline-block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 100;
+    color: #888;
 }
 
 .item.text {

@@ -14,13 +14,6 @@ main {
     grid-template-columns: repeat(3, 1fr); /* for header */
 }
 
-h1 {
-    color: red;
-    background-color: white;
-    padding: 25px;
-    border-radius: 25px;
-}
-
 .card-header1 {
     grid-column: 1 / -1; /* Span across all columns */
     display: flex;
