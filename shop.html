@@ -1330,7 +1330,7 @@ screen=desktop-article
             <div class="card-header1">
                 <img class="celebrity-photo" src="./biebs-face.png" alt="Chrissy Teigen">
                 <div class="celebrity-info">
-                    <div class="celebrity-name">Hailey Bieber</div>
+                    <div class="celebrity-name"><a href="./index.html">Hailey Bieber</a></div>
                     <div class="date">February 25, 2024</div>
                 </div>
             </div>
@@ -1374,7 +1374,7 @@ screen=desktop-article
             <div class="card-header1">
                 <img class="celebrity-photo" src="./carey-mulligan/face.png" alt="Chrissy Teigen">
                 <div class="celebrity-info">
-                    <div class="celebrity-name">Carey Mulligan</div>
+                    <div class="celebrity-name"><a href="./carey-mulligan.html">Carey Mulligan</a></div>
                     <div class="date">February 24, 2024</div>
                 </div>
             </div>
@@ -1418,7 +1418,7 @@ screen=desktop-article
             <div class="card-header1">
                 <img class="celebrity-photo" src="./chrissy-teigen/face.png" alt="Chrissy Teigen">
                 <div class="celebrity-info">
-                    <div class="celebrity-name">Chrissy Teigen</div>
+                    <div class="celebrity-name"><a href="./chrissy-teigen.html">Chrissy Teigen</a></div>
                     <div class="date">February 20, 2024</div>
                 </div>
             </div>
@@ -1624,12 +1624,43 @@ screen=desktop-article
                 <div class="item text"><b>Showstoppers</b> - Denim Jacket<br><b><div class="price">$26.50</div></b></div>
                 <div class="item flexible"><img class="img-aspect-auto" src="./lucy-hale/be_like/shirt-removebg-preview.png" loading="lazy" alt=""><img class="wannabe-cart-right" src="./cart.svg"></div>
             
-                <div class="item text"><b>Asos</b> - Monki wide leg<br><b><div class="price">$22.50</div></b></div>
-                <div class="item flexible"><img class="img-aspect-auto" src="./lucy-hale/be_like/pants-removebg-preview.png" loading="lazy" alt=""><img class="wannabe-cart-right" src="./cart.svg"></div>
+                <div class="lucy-hale-bl-pant state1">
+                    <div class="item text"><b>Asos</b> - Monki wide leg<br><b><div class="price">$22.50</div></b></div>
+                    <div class="item flexible"><img class="img-aspect-auto" src="./lucy-hale/be_like/pants-removebg-preview.png" loading="lazy" alt="">
+                        <img class="wannabe-cart-right" src="./cart.svg">
+                        <img class="wannabe-refresh-right" src="./refresh.svg" onclick="cycleStates(this)">
+                    </div>
+                </div>
             
                 <div class="item bottom"><div class="bottom-container-right"><div class="wannabe-total">Total: </div> $74</div></div>
             </div>
         </div>
+        <script>
+            function cycleStates(element) {
+                // Get elements inside the clicked container
+                const textElement = element.parentNode.parentNode.querySelector('.item.text');
+                const imgElement = element.parentNode.parentNode.querySelector('.img-aspect-auto');
+
+                // Change text and image source based on the current state
+                if (element.classList.contains('state1')) {
+                    textElement.innerHTML = '<b>Zara</b> - High Waisted Jeans<br><b><div class="price">$35.99</div></b>';
+                    imgElement.src = './zara-jeans.png';
+                    element.classList.remove('state1');
+                    element.classList.add('state2');
+                } else if (element.classList.contains('state2')) {
+                    textElement.innerHTML = '<b>H&M</b> - Wide Jeans<br><b><div class="price">$29.99</div></b>';
+                    imgElement.src = './hm-jeans.png';
+                    element.classList.remove('state2');
+                    element.classList.add('state3');
+                } else {
+                    textElement.innerHTML = '<b>Asos</b> - Monki wide leg<br><b><div class="price">$22.50</div></b>';
+                    imgElement.src = './lucy-hale/be_like/pants-removebg-preview.png';
+                    element.classList.remove('state3');
+                    element.classList.add('state1');
+                }
+            }
+
+        </script>
 
         <div class="grid-container">
             <div class="card-header1">
