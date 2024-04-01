@@ -30785,6 +30785,24 @@ img.main {
     margin-left: 8%;
 }
 
+.item .logo-left {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 20%;
+}
+
+.item .logo-right {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: 20%;
+}
+
 .item.flexible .wannabe-cart-left, .item.flexible .wannabe-cart-right{
     transform: translateY(50%);
 }
@@ -30816,4 +30834,8 @@ img.main {
 
 .item .wannabe-refresh-right:active {
     background-color: lightcoral;
+}
+
+.social__count{
+    color: white;
 }
