@@ -30571,8 +30571,8 @@ input[type=radio]:checked+.poll-block__input-icon+.poll-block__input-label {
 
 button.wannabe {
     position: absolute;
-    right: 4rem;
-    bottom: -1.5rem;
+    right: 0rem;
+    bottom: 0;
     text-align: center;
     /* border: 1px outset blue;
     background-color: lightBlue; */
@@ -30664,6 +30664,12 @@ dialog {
 .item.text {
     font-size: smaller;
     height: 7.81%;
+    text-decoration: none;
+}
+
+.item.text:hover {
+    color: red; /* Change text color to red on hover */
+    text-decoration: underline; /* Underline text on hover */
 }
 
 .column .title {
@@ -30722,8 +30728,8 @@ img.main {
 }
 
 #logo-banner {
-    max-width: 135px;
-    padding-bottom: 25px;
+    max-height: 100%;
+    width: auto;
 }
 
 #shop-banner:hover, #logo-banner:hover {
@@ -30813,6 +30819,10 @@ img.main {
     color:#888;
 }
 
+.item.text:hover .price {
+    color: red; /* Change text color to red on hover */
+}
+
 .lucy-hale-bl-pant {
     display: contents;
 }
@@ -30839,3 +30849,4 @@ img.main {
 .social__count{
     color: white;
 }
+
